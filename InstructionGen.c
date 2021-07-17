@@ -4,7 +4,7 @@
 
 #define MAX 100    // Maximum Number of Elements in the Stack
 #define OFFSET 200 // Symbolic Constant
-// #define NTC 5   // Number of Test Cases
+#define NTC 5      // Number of Test Cases
 
 int st[MAX]; // Implementing an Integer Stack
 int top = -1;
@@ -17,13 +17,13 @@ void printOperation(char c);
 
 int main()
 {
-    char exp[100];
-    printf("Enter Postfix Expression : ");
-    gets(exp); // Reads the expression
-    getCommands(exp);
+    // char exp[100];
+    // printf("Enter Postfix Expression : ");
+    // gets(exp); // Reads the expression
+    // getCommands(exp);
 
     // Test Data
-    /*char exp[NTC][50] = {
+    char exp[NTC][50] = {
         "ABC*+DE-/",
         "AB+CD+*",
         "AB*CD*+",
@@ -37,7 +37,7 @@ int main()
         printf("\n---------------------------------\n");
         getCommands(exp[i]);
         printf("---------------------------------\n");
-    }*/
+    }
     return 0;
 }
 
